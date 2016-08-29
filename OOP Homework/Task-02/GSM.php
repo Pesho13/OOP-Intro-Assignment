@@ -69,7 +69,7 @@ class GSM
 	public function getSumForCall()
 	{
 		$call = $this->call;
-		return $this->outgoingCallsDuration * $call::$priceForAMinute . '$';
+		return $this->outgoingCallsDuration * $call::getPriceForAMinute() . '$';
 	}
 	
 	
