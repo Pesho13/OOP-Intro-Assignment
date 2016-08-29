@@ -2,7 +2,7 @@
 
 class Call
 {
-	public static $priceForAMinute = 0.19;
+	private  static $priceForAMinute = 0.19;
 	
 	private $caller;
 	
@@ -36,6 +36,11 @@ class Call
 	public function getDuration()
 	{
 		return $this->duration;
+	}
+	
+	public static function getPriceForAMinute()
+	{
+		return self::$priceForAMinute;
 	}
 	
 }
